@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>jp.gihyo.projava</groupId>
-	<artifactId>tasklist</artifactId>
+	<artifactId>publish</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Tasklist</name>
+	<name>Publish</name>
 	<description>Spring Bootを使ったタスク管理アプリケーション</description>
 	<properties>
 		<java.version>17</java.version>
@@ -21,24 +21,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
+    <!-- HTTPクライアント機能を利用するために RestTemplate を追加 -->
+	    <dependency>
+    	    <groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 	</dependencies>
 

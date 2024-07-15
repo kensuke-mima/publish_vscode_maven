@@ -1,13 +1,13 @@
-package jp.gihyo.projava.tasklist;
+package jp.gihyo.projava.publish;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TasklistApplication {
+public class PublishApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TasklistApplication.class, args);
+		SpringApplication.run(PublishApplication.class, args);
 	}
 
 }
